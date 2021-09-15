@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="David_Module04_Activity01.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkKhaki" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="Lavender" FontSize="36">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to PDC60!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+
+        <Frame>
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
